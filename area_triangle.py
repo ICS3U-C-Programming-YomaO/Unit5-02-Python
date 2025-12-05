@@ -9,6 +9,7 @@ def calc_area(base, height):
     area = 0.5 * base * height
     print(f"The area of the triangle is {area} cm^2")
 
+
 # welcome message
 def main():
     print("Welcome to the area of a triangle calculator!")
@@ -19,7 +20,7 @@ def main():
         base = float(input("Enter the base (cm): "))
     except ValueError:
         print("Enter a valid base!")
-        return  
+        return
     # stop the program
     # try catch for height
     try:
@@ -27,7 +28,7 @@ def main():
         height = float(input("Enter the height (cm): "))
     except ValueError:
         print("Enter a valid height!")
-        return  
+        return
     # stop the program
 
     calc_area(base, height)
